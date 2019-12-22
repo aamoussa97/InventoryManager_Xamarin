@@ -8,6 +8,12 @@ InventoryManager cross platform mobile application written in Xamarin C#, for co
 
 ## Screenshots
 # iOS client
+<p float="center">
+  <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" />
+  <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" /> 
+  <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" />
+</p>
+
 <div>
 <img src="/Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" height="500" width="250"/>
 </div>
