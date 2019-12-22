@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Products" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvPageProducts">
+    <StackLayout>
+        <!--<SearchBar x:Name="SearchBarProducts" TextChanged="Handle_TextChanged">
+        </SearchBar>-->
+        <Button BackgroundColor="Teal" Margin="10" TextColor="White" Text="Add product" x:Name="addProductButton" Clicked="AddProductButton_Clicked" />
+        <ListView x:Name="productsListView" Margin="10" RowHeight="265" SeparatorVisibility="None" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Clicked="EditProduct" CommandParameter="{Binding .}" Text="Edit" />
+                            <MenuItem Clicked="DeleteProduct" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                        </ViewCell.ContextActions>
+                        <StackLayout HorizontalOptions="Start">
+                            <Label FontSize="Large" FontAttributes="Bold" Text="{Binding ProductName}" />
+                            <Label Text="{Binding ProductID, StringFormat='ID {0}'}" />
+                            <Label Text="{Binding ProductSKU, StringFormat='SKU {0}'}" />
+                            <Label Text="{Binding ProductBrand, StringFormat='Brand {0}'}" />
+                            <Label Text="{Binding ProductPrice, StringFormat='Price {0}'}" />
+                            <Label Text="{Binding ProductVariableCost, StringFormat='Variablecost {0}'}" />
+                            <Label Text="{Binding ProductStartFactor, StringFormat='StartFactor {0}'}" />
+                            <Label Text="{Binding ProductGrowthFactor, StringFormat='GrowthFactor {0}'}" />
+                            <Label Text="{Binding ProductQuantity, StringFormat='Quantity {0}'}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

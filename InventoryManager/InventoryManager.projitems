@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{00498D48-1406-40D4-92D2-8ED3EEA95F99}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>InventoryManager</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MenuPages\InvMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MenuPages\InvMasterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MenuPages\InvTabbedPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageBrands.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProducts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesInsert\InvInsertProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProductPrices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageMaterials.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesInsert\InvInsertBrand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProductSkus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProductVariableCosts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Brand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuPages\InvMainPage.xaml.cs">
+      <DependentUpon>InvMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuPages\InvMainPageCS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuPages\InvMasterPage.xaml.cs">
+      <DependentUpon>InvMasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuPages\InvMasterPageCS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuPages\InvTabbedPage.xaml.cs">
+      <DependentUpon>InvTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageBrands.xaml.cs">
+      <DependentUpon>InvPageBrands.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProducts.xaml.cs">
+      <DependentUpon>InvPageProducts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesInsert\InvInsertProduct.xaml.cs">
+      <DependentUpon>InvInsertProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ProductPrice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ProductSku.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ProductVariableCost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProductPrices.xaml.cs">
+      <DependentUpon>InvPageProductPrices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Material.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageMaterials.xaml.cs">
+      <DependentUpon>InvPageMaterials.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MasterPageItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesInsert\InvInsertBrand.xaml.cs">
+      <DependentUpon>InvInsertBrand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProductSkus.xaml.cs">
+      <DependentUpon>InvPageProductSkus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\InvPageProductVariableCosts.xaml.cs">
+      <DependentUpon>InvPageProductVariableCosts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ModelInsert\BrandsInsert.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ModelDelete\BrandsDelete.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ModelInsert\ProductsInsert.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\LoginToken.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ModelPages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)MenuPages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesGet\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ModelPages\ModelPagesInsert\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\ModelInsert\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\ModelDelete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Icons\baseline_menu_black_18dp.png" />
+  </ItemGroup>
+</Project>

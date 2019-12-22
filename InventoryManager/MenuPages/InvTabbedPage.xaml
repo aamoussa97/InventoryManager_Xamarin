@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvTabbedPage">
+    <!--Pages can be added as references or inline-->
+    <!-- Activity Indicator-->
+    <ContentPage Title="Brands">
+        <StackLayout>
+            <Label Text="Brands" />
+            <ListView x:Name="brandsListView" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label Text="{Binding BrandID}" />
+                                <Label Text="{Binding BrandName}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Products">
+        <StackLayout>
+            <Label Text="Products" />
+            <ListView x:Name="productsListView" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label Text="{Binding ProductID}" />
+                                <Label Text="{Binding ProductSKU}" />
+                                <Label Text="{Binding ProductName}" />
+                                <Label Text="{Binding ProductBrand}" />
+                                <Label Text="{Binding ProductMaterialsOrderID}" />
+                                <Label Text="{Binding ProductPrice}" />
+                                <Label Text="{Binding ProductVariableCost}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

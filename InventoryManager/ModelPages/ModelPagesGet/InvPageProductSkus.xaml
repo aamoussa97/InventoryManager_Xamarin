@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="SKUs" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvPageProductSkus"> <!-- x:Class="InventoryManager.ModelPages.ModelPagesGet.InvPageProductSkus"> -->
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<SearchBar></SearchBar>-->
+            <Button BackgroundColor="Teal" Margin="10" TextColor="White" Text="Add sku" x:Name="addSkuButton" Clicked="AddSkuButton_Clicked" />
+            <ListView x:Name="skusListView" Margin="10" RowHeight="70" SeparatorVisibility="None" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="EditSku" CommandParameter="{Binding .}" Text="Edit" />
+                                <MenuItem Clicked="DeleteSku" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label FontSize="Large" FontAttributes="Bold" Text="{Binding SKUValue}" />
+                                <Label Text="{Binding SKUID, StringFormat='ID {0}'}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

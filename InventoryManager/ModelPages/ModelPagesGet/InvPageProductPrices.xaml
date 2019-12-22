@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Prices" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvPageProductPrices"> <!-- .ModelPages.ModelPagesGet.InvPageProductPrices -->
+   <ContentPage.Content>
+        <StackLayout>
+            <!--<SearchBar></SearchBar>-->
+            <Button BackgroundColor="Teal" Margin="10" TextColor="White" Text="Add price" x:Name="addPriceButton" Clicked="AddPriceButton_Clicked" />
+            <ListView x:Name="priceListView" Margin="10" RowHeight="70" SeparatorVisibility="None" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="EditProductPrice" CommandParameter="{Binding .}" Text="Edit" />
+                                <MenuItem Clicked="DeleteProductPrice" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label FontSize="Large" FontAttributes="Bold" Text="{Binding PriceValue}" />
+                                <Label Text="{Binding PriceID, StringFormat='ID {0}'}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

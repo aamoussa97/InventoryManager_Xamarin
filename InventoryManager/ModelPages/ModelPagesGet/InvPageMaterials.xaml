@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Materials" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvPageMaterials">
+    <!--InventoryManager.ModelPages.ModelPagesGet.InvPageMaterials-->
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<SearchBar></SearchBar>-->
+            <Button BackgroundColor="Teal" Margin="10" TextColor="White" Text="Add material" x:Name="addMaterialButton" Clicked="AddMaterialButton_Clicked" />
+            <ListView x:Name="materialsListView" Margin="10" RowHeight="70" SeparatorVisibility="None" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="EditMaterial" CommandParameter="{Binding .}" Text="Edit" />
+                                <MenuItem Clicked="DeleteMaterial" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label FontSize="Large" FontAttributes="Bold" Text="{Binding MaterialName}" />
+                                <Label Text="{Binding MaterialID, StringFormat='ID {0}'}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

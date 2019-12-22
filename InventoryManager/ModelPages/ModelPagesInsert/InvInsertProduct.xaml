@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvInsertProduct">
+    <ContentPage.Content>
+        <!--<StackLayout>
+            <Label Text="Insert Product" FontSize="Large" FontAttributes="Bold" />
+            <Entry Text="ProductSKU" />
+            <Button BackgroundColor="Teal" TextColor="White" Text="Insert" x:Name="insertButton" Clicked="InsertButton_Clicked" />
+        </StackLayout>-->
+        <ScrollView>
+            <StackLayout Margin="20" Spacing="20">
+                <Label Text="Insert Product" FontAttributes="Bold" FontSize="30" />
+                <!--<Label Text="Loginscreen" FontSize="Large" FontAttributes="Bold" />-->
+                <Entry Keyboard="Numeric" x:Name="skuTextBox" Placeholder="SKU" />
+                <Entry Keyboard="Text" x:Name="nameTextBox" Placeholder="Name" />
+                <Picker x:Name="brandPicker" />
+                <Entry Keyboard="Numeric" x:Name="materialsTextBox" Placeholder="Materials" />
+                <Entry Keyboard="Numeric" x:Name="priceTextBox" Placeholder="Price" />
+                <Entry Keyboard="Numeric" x:Name="variablecostTextBox" Placeholder="Variablecost" />
+                <Entry Keyboard="Numeric" x:Name="startfactorTextBox" Placeholder="Start factor" />
+                <Entry Keyboard="Numeric" x:Name="growthfactorTextBox" Placeholder="Growth factor" />
+                <Button BackgroundColor="Teal" TextColor="White" Text="Insert" x:Name="insertButton" Clicked="InsertButton_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Brands" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvPageBrands">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<SearchBar></SearchBar>-->
+            <Button BackgroundColor="Teal" Margin="10" TextColor="White" Text="Add brand" x:Name="addBrandButton" Clicked="AddBrandButton_Clicked" />
+            <ListView x:Name="brandsListView" Margin="10" RowHeight="70" SeparatorVisibility="None" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="EditBrand" CommandParameter="{Binding .}" Text="Edit" />
+                                <MenuItem Clicked="DeleteBrand" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label FontSize="Large" FontAttributes="Bold" Text="{Binding BrandName}" />
+                                <Label Text="{Binding BrandID, StringFormat='ID {0}'}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:InventoryManager" x:Class="InventoryManager.LoginPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
+        <Label Text="InventoryManager" FontAttributes="Bold" FontSize="33" />
+        <Label Text="Loginscreen" FontSize="Large" FontAttributes="Bold"/>
+        <Entry Keyboard="Text" x:Name="usernameTextBox" Placeholder="Username" />
+        <Entry IsPassword="true" x:Name="passwordTextBox" Placeholder="Password" />
+        <Button BackgroundColor="DodgerBlue" TextColor="White" Text="Login" x:Name="loginButton" Clicked="LoginButton_Clicked" />
+    </StackLayout>
+</ContentPage>

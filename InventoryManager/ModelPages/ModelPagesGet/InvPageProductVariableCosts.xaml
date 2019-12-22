@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Variablecosts" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InventoryManager.InvPageProductVariableCosts"> <!-- InventoryManager.ModelPages.ModelPagesGet.InvPageProductVariableCosts -->
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<SearchBar></SearchBar>-->
+            <Button BackgroundColor="Teal" Margin="10" TextColor="White" Text="Add variablecost" x:Name="addVariableCostButton" Clicked="AddVariableCostButton_Clicked" />
+            <ListView x:Name="variableCostListView" Margin="10" RowHeight="70" SeparatorVisibility="None" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="EditProductVariableCost" CommandParameter="{Binding .}" Text="Edit" />
+                                <MenuItem Clicked="DeleteProductVariableCost" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label FontSize="Large" FontAttributes="Bold" Text="{Binding VariableCostValue}" />
+                                <Label Text="{Binding VariableCostID, StringFormat='ID {0}'}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

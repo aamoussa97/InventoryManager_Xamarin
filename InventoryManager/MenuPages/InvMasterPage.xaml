@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="using:InventoryManager" x:Class="InventoryManager.InvMasterPage" Padding="0,10,0,0" Icon="hamburger.png" Title="Personal Organiser">
+    <StackLayout>
+        <Grid BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="0" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Label Grid.Column="1" Grid.Row="2" Text="InventoryManager" FontAttributes="Bold" FontSize="30" Style="{DynamicResource SubtitleStyle}" />
+        </Grid>
+        <ListView x:Name="listView" SeparatorVisibility="None" HasUnevenRows="true" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="Brands" TargetType="{x:Type local:InvPageBrands}" />
+                    <local:MasterPageItem Title="Products" TargetType="{x:Type local:InvPageProducts}" />
+                    <local:MasterPageItem Title="Materials" TargetType="{x:Type local:InvPageMaterials}" />
+                    <local:MasterPageItem Title="Skus" TargetType="{x:Type local:InvPageProductSkus}" />
+                    <local:MasterPageItem Title="Prices" TargetType="{x:Type local:InvPageProductPrices}" />
+                    <local:MasterPageItem Title="Variablecosts" TargetType="{x:Type local:InvPageProductVariableCosts}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
+                            <Label VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" Text="{Binding Title}" FontAttributes="Bold" FontSize="25" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
