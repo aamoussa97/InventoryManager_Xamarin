@@ -8,33 +8,15 @@ InventoryManager cross platform mobile application written in Xamarin C#, for co
 
 ## Screenshots
 # iOS client
-<p float="center">
+<p float="left" align="middle">
   <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" />
   <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" /> 
   <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" />
 </p>
 
-<div>
-<img src="/Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" height="500" width="250"/>
-</div>
-
-<div>
-<img src="/Screenshots/Xamarin iOS-screens/Products.png?raw=true" height="500" width="250"/>
-</div>
-
-<div>
-<img src="/Screenshots/Xamarin iOS-screens/Products_insert.png?raw=true" height="500" width="250"/>
-</div>
-
 # Android client
-<div>
-<img src="/Screenshots/Xamarin Android-screens/Screenshot_1557747664.png?raw=true" height="500" width="250"/>
-</div>
-
-<div>
-<img src="/Screenshots/Xamarin Android-screens/Screenshot_1557747787.png?raw=true" height="500" width="250"/>
-</div>
-
-<div>
-<img src="/Screenshots/Xamarin Android-screens/Screenshot_1557747811.png?raw=true" height="500" width="250"/>
-</div>
+<p float="left" align="middle">
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_1557747664.png?raw=true" width="250" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_1557747787.png?raw=true" width="250" /> 
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_1557747811.png?raw=true" width="250" />
+</p>
