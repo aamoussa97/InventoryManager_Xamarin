@@ -9,14 +9,32 @@ InventoryManager cross platform mobile application written in Xamarin C#, for co
 ## Screenshots
 ### iOS client
 <p float="left" align="middle">
-  <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" />
-  <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" /> 
-  <img src="Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" width="250" />
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_1.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_2.png?raw=true" width="150" /> 
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_3.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_4.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_5.png?raw=true" width="150" /> 
+</p>
+
+<p float="left" align="middle">
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_6.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_7.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_8.png?raw=true" width="150" /> 
+  <img src="Screenshots/Xamarin iOS-screens/Screenshot_9.png?raw=true" width="150" />
 </p>
 
 ### Android client
 <p float="left" align="middle">
-  <img src="Screenshots/Xamarin Android-screens/Screenshot_1557747664.png?raw=true" width="250" />
-  <img src="Screenshots/Xamarin Android-screens/Screenshot_1557747787.png?raw=true" width="250" /> 
-  <img src="Screenshots/Xamarin Android-screens/Screenshot_1557747811.png?raw=true" width="250" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_1.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_2.png?raw=true" width="150" /> 
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_3.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_4.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_5.png?raw=true" width="150" /> 
+</p>
+
+<p float="left" align="middle">
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_6.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_7.png?raw=true" width="150" />
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_8.png?raw=true" width="150" /> 
+  <img src="Screenshots/Xamarin Android-screens/Screenshot_9.png?raw=true" width="150" />
 </p>
