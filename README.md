@@ -7,6 +7,7 @@ InventoryManager cross platform mobile application written in Xamarin C#, for co
 * Cross platform mobile application development with Xamarin C#.
 
 ## Screenshots
+# iOS client
 <div>
 <img src="/Screenshots/Xamarin iOS-screens/Login_1.png?raw=true" height="500" width="250"/>
 </div>
@@ -17,4 +18,17 @@ InventoryManager cross platform mobile application written in Xamarin C#, for co
 
 <div>
 <img src="/Screenshots/Xamarin iOS-screens/Products_insert.png?raw=true" height="500" width="250"/>
+</div>
+
+# Android client
+<div>
+<img src="/Screenshots/Xamarin Android-screens/Screenshot_1557747664.png?raw=true" height="500" width="250"/>
+</div>
+
+<div>
+<img src="/Screenshots/Xamarin Android-screens/Screenshot_1557747787.png?raw=true" height="500" width="250"/>
+</div>
+
+<div>
+<img src="/Screenshots/Xamarin Android-screens/Screenshot_1557747811.png?raw=true" height="500" width="250"/>
 </div>
